@@ -4,3 +4,4 @@
 /bloaty
 !tests/testdata/**
 *.dSYM
+build/
