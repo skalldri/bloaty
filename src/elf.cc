@@ -818,6 +818,10 @@ static bool ElfMachineToCapstone(Elf64_Half e_machine, cs_arch* arch,
       *arch = CS_ARCH_SPARC;
       *mode = CS_MODE_V9;
       return true;
+    case EM_RISCV:
+      *arch = CS_ARCH_RISCV;
+      *mode = CS_MODE_RISCV32;
+      return true;
 
     default:
       if (verbose_level > 1) {
